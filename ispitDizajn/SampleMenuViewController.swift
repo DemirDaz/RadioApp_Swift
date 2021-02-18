@@ -31,6 +31,8 @@ class SampleMenuViewController: MenuViewController, Storyboardable {
     private var gradientLayer = CAGradientLayer()
     @IBOutlet fileprivate weak var nazad:UIButton!
     @IBOutlet fileprivate weak var btn1:UIButton!
+    @IBOutlet fileprivate weak var pevac:UILabel!
+    @IBOutlet fileprivate weak var pesma:UILabel!
     
     
 
@@ -44,10 +46,17 @@ class SampleMenuViewController: MenuViewController, Storyboardable {
         return .lightContent
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        let preferences = UserDefaults.standard
+        pevac.text = preferences.string(forKey: "pevac")
+        pesma.text = preferences.string(forKey: "pesma")
+        super.viewWillAppear(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //view.bringSubviewToFront(pevac)
+//view.bringSubviewToFront(pesma)
         // Select the initial row
         tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: UITableView.ScrollPosition.none)
 
