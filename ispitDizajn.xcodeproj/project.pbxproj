@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CED45B9C8F32DAEB94DD41C /* Pods_ispitDizajn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A830FCD3526FF3FD90CCDECE /* Pods_ispitDizajn.framework */; };
 		EC13F67725DD64F40019BAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13F67625DD64F40019BAA0 /* AppDelegate.swift */; };
 		EC13F67925DD64F40019BAA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13F67825DD64F40019BAA0 /* SceneDelegate.swift */; };
 		EC13F67B25DD64F40019BAA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13F67A25DD64F40019BAA0 /* ViewController.swift */; };
 		EC13F67E25DD64F40019BAA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC13F67C25DD64F40019BAA0 /* Main.storyboard */; };
 		EC13F68025DD64F50019BAA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC13F67F25DD64F50019BAA0 /* Assets.xcassets */; };
 		EC13F68325DD64F50019BAA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC13F68125DD64F50019BAA0 /* LaunchScreen.storyboard */; };
+		EC13F6A325DD71AA0019BAA0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13F6A025DD71AA0019BAA0 /* Reachability.swift */; };
+		EC13F6A425DD71AA0019BAA0 /* FRadioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13F6A125DD71AA0019BAA0 /* FRadioAPI.swift */; };
+		EC13F6A525DD71AA0019BAA0 /* FRadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13F6A225DD71AA0019BAA0 /* FRadioPlayer.swift */; };
+		EC7BD53625DDF6B800F48EE6 /* SampleMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7BD53325DDF6B800F48EE6 /* SampleMenuViewController.storyboard */; };
+		EC7BD53725DDF6B800F48EE6 /* SampleMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD53425DDF6B800F48EE6 /* SampleMenuViewController.swift */; };
+		EC7BD53825DDF6B800F48EE6 /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD53525DDF6B800F48EE6 /* HostViewController.swift */; };
+		EC7BD53B25DDF6E200F48EE6 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7BD53A25DDF6E200F48EE6 /* ViewController.storyboard */; };
+		EC7BD54225DDF81000F48EE6 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = EC7BD54125DDF81000F48EE6 /* Helpers */; };
+		EC7BD54A25DDF8E900F48EE6 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD54925DDF8E900F48EE6 /* Storyboardable.swift */; };
+		EC7BD55125DDFAAA00F48EE6 /* SampleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD55025DDFAAA00F48EE6 /* SampleTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9259B88D3ECC7CF4877D27A7 /* Pods-ispitDizajn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ispitDizajn.debug.xcconfig"; path = "Target Support Files/Pods-ispitDizajn/Pods-ispitDizajn.debug.xcconfig"; sourceTree = "<group>"; };
+		A39BD522212190CC1ED21906 /* Pods-ispitDizajn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ispitDizajn.release.xcconfig"; path = "Target Support Files/Pods-ispitDizajn/Pods-ispitDizajn.release.xcconfig"; sourceTree = "<group>"; };
+		A830FCD3526FF3FD90CCDECE /* Pods_ispitDizajn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ispitDizajn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC13F67325DD64F40019BAA0 /* ispitDizajn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ispitDizajn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC13F67625DD64F40019BAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC13F67825DD64F40019BAA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,16 @@
 		EC13F67F25DD64F50019BAA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC13F68225DD64F50019BAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC13F68425DD64F50019BAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC13F6A025DD71AA0019BAA0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EC13F6A125DD71AA0019BAA0 /* FRadioAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRadioAPI.swift; sourceTree = "<group>"; };
+		EC13F6A225DD71AA0019BAA0 /* FRadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRadioPlayer.swift; sourceTree = "<group>"; };
+		EC7BD53325DDF6B800F48EE6 /* SampleMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SampleMenuViewController.storyboard; sourceTree = "<group>"; };
+		EC7BD53425DDF6B800F48EE6 /* SampleMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleMenuViewController.swift; sourceTree = "<group>"; };
+		EC7BD53525DDF6B800F48EE6 /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
+		EC7BD53A25DDF6E200F48EE6 /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		EC7BD54125DDF81000F48EE6 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
+		EC7BD54925DDF8E900F48EE6 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		EC7BD55025DDFAAA00F48EE6 /* SampleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CED45B9C8F32DAEB94DD41C /* Pods_ispitDizajn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F742EE013295A386BEAA45E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9259B88D3ECC7CF4877D27A7 /* Pods-ispitDizajn.debug.xcconfig */,
+				A39BD522212190CC1ED21906 /* Pods-ispitDizajn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8BA57BFA58FA59A6215AAF9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A830FCD3526FF3FD90CCDECE /* Pods_ispitDizajn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC13F66A25DD64F40019BAA0 = {
 			isa = PBXGroup;
 			children = (
+				EC7BD53125DDF68F00F48EE6 /* Controllers */,
+				EC7BD54125DDF81000F48EE6 /* Helpers */,
 				EC13F67525DD64F40019BAA0 /* ispitDizajn */,
 				EC13F67425DD64F40019BAA0 /* Products */,
+				6F742EE013295A386BEAA45E /* Pods */,
+				8BA57BFA58FA59A6215AAF9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +102,31 @@
 		EC13F67525DD64F40019BAA0 /* ispitDizajn */ = {
 			isa = PBXGroup;
 			children = (
+				EC7BD53425DDF6B800F48EE6 /* SampleMenuViewController.swift */,
+				EC7BD55025DDFAAA00F48EE6 /* SampleTableCell.swift */,
+				EC7BD53325DDF6B800F48EE6 /* SampleMenuViewController.storyboard */,
+				EC7BD53525DDF6B800F48EE6 /* HostViewController.swift */,
+				EC7BD54925DDF8E900F48EE6 /* Storyboardable.swift */,
+				EC13F67A25DD64F40019BAA0 /* ViewController.swift */,
 				EC13F67625DD64F40019BAA0 /* AppDelegate.swift */,
 				EC13F67825DD64F40019BAA0 /* SceneDelegate.swift */,
-				EC13F67A25DD64F40019BAA0 /* ViewController.swift */,
 				EC13F67C25DD64F40019BAA0 /* Main.storyboard */,
+				EC13F6A125DD71AA0019BAA0 /* FRadioAPI.swift */,
+				EC13F6A225DD71AA0019BAA0 /* FRadioPlayer.swift */,
+				EC13F6A025DD71AA0019BAA0 /* Reachability.swift */,
 				EC13F67F25DD64F50019BAA0 /* Assets.xcassets */,
 				EC13F68125DD64F50019BAA0 /* LaunchScreen.storyboard */,
 				EC13F68425DD64F50019BAA0 /* Info.plist */,
+				EC7BD53A25DDF6E200F48EE6 /* ViewController.storyboard */,
 			);
 			path = ispitDizajn;
+			sourceTree = "<group>";
+		};
+		EC7BD53125DDF68F00F48EE6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC13F68725DD64F50019BAA0 /* Build configuration list for PBXNativeTarget "ispitDizajn" */;
 			buildPhases = (
+				0829C17EC0F2A2AD5C146D1B /* [CP] Check Pods Manifest.lock */,
 				EC13F66F25DD64F40019BAA0 /* Sources */,
 				EC13F67025DD64F40019BAA0 /* Frameworks */,
 				EC13F67125DD64F40019BAA0 /* Resources */,
+				8896BAAE83CC62DF57BA64C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,7 +166,7 @@
 				};
 			};
 			buildConfigurationList = EC13F66E25DD64F40019BAA0 /* Build configuration list for PBXProject "ispitDizajn" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -124,6 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7BD54225DDF81000F48EE6 /* Helpers in Resources */,
+				EC7BD53625DDF6B800F48EE6 /* SampleMenuViewController.storyboard in Resources */,
+				EC7BD53B25DDF6E200F48EE6 /* ViewController.storyboard in Resources */,
 				EC13F68325DD64F50019BAA0 /* LaunchScreen.storyboard in Resources */,
 				EC13F68025DD64F50019BAA0 /* Assets.xcassets in Resources */,
 				EC13F67E25DD64F40019BAA0 /* Main.storyboard in Resources */,
@@ -132,13 +199,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0829C17EC0F2A2AD5C146D1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ispitDizajn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8896BAAE83CC62DF57BA64C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ispitDizajn/Pods-ispitDizajn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ispitDizajn/Pods-ispitDizajn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ispitDizajn/Pods-ispitDizajn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC13F66F25DD64F40019BAA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7BD53825DDF6B800F48EE6 /* HostViewController.swift in Sources */,
 				EC13F67B25DD64F40019BAA0 /* ViewController.swift in Sources */,
+				EC7BD53725DDF6B800F48EE6 /* SampleMenuViewController.swift in Sources */,
+				EC13F6A425DD71AA0019BAA0 /* FRadioAPI.swift in Sources */,
 				EC13F67725DD64F40019BAA0 /* AppDelegate.swift in Sources */,
+				EC7BD55125DDFAAA00F48EE6 /* SampleTableCell.swift in Sources */,
+				EC13F6A525DD71AA0019BAA0 /* FRadioPlayer.swift in Sources */,
+				EC13F6A325DD71AA0019BAA0 /* Reachability.swift in Sources */,
+				EC7BD54A25DDF8E900F48EE6 /* Storyboardable.swift in Sources */,
 				EC13F67925DD64F40019BAA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,11 +399,13 @@
 		};
 		EC13F68825DD64F50019BAA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9259B88D3ECC7CF4877D27A7 /* Pods-ispitDizajn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ispitDizajn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +419,13 @@
 		};
 		EC13F68925DD64F50019BAA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39BD522212190CC1ED21906 /* Pods-ispitDizajn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ispitDizajn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

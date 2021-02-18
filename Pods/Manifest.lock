@@ -1,0 +1,20 @@
+PODS:
+  - InteractiveSideMenu (2.3)
+  - PresenterKit (6.1.1)
+
+DEPENDENCIES:
+  - InteractiveSideMenu
+  - PresenterKit (~> 6.1.0)
+
+SPEC REPOS:
+  trunk:
+    - InteractiveSideMenu
+    - PresenterKit
+
+SPEC CHECKSUMS:
+  InteractiveSideMenu: d503a508c6d62a4d5d4372d9fb9e1795637a8e45
+  PresenterKit: f7d275fa9e1fe01b84da7be0a6630ec2728ab409
+
+PODFILE CHECKSUM: 042718ce29c099b2571d3728481a2971c6333bc4
+
+COCOAPODS: 1.10.1
