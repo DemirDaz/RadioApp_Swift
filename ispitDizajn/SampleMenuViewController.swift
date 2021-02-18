@@ -19,6 +19,7 @@
 import UIKit
 import InteractiveSideMenu
 
+
 /**
  Menu controller is responsible for creating its content and showing/hiding menu using 'menuContainerViewController' property.
  */
@@ -48,6 +49,8 @@ class SampleMenuViewController: MenuViewController, Storyboardable {
 
     override func viewWillAppear(_ animated: Bool) {
         let preferences = UserDefaults.standard
+        //var lengthyLabel = MarqueeLabel.init(frame: aFrame, duration: 8.0, fadeLength: 10.0)
+
         pevac.text = preferences.string(forKey: "pevac")
         pesma.text = preferences.string(forKey: "pesma")
         super.viewWillAppear(true)

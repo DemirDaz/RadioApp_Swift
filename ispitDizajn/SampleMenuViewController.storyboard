@@ -56,8 +56,23 @@
                                     <constraint firstItem="gbY-hr-JlK" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="top" constant="55" id="Zok-Vh-ksY"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="100-0G-rtc">
-                                <rect key="frame" x="0.0" y="311" width="414" height="214"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pesma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ilj-Kh-f0U" customClass="MarqueeLabel" customModule="ispitDizajn">
+                                <rect key="frame" x="32" y="644" width="183" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Izvodjac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iNp-t7-GYe" userLabel="imepevaca">
+                                <rect key="frame" x="32" y="620" width="183" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="100-0G-rtc">
+                                <rect key="frame" x="0.0" y="310" width="414" height="214"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="214" id="ogK-EP-xM1"/>
@@ -71,7 +86,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPP-IC-kuq">
-                                                    <rect key="frame" x="22" y="16" width="47" height="34"/>
+                                                    <rect key="frame" x="22" y="0.0" width="47" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47" id="Dh9-8K-7fp"/>
                                                         <constraint firstAttribute="width" constant="47" id="jDB-Wm-no2"/>
@@ -221,39 +236,25 @@
                                     <outlet property="delegate" destination="kda-Il-Pzk" id="et3-Lg-N5N"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pesma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ilj-Kh-f0U">
-                                <rect key="frame" x="32" y="644" width="183" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Izvodjac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iNp-t7-GYe" userLabel="imepevaca">
-                                <rect key="frame" x="32" y="620" width="183" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" systemColor="systemGray6Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="100-0G-rtc" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="9Rg-H3-p3V"/>
+                            <constraint firstItem="iNp-t7-GYe" firstAttribute="top" secondItem="100-0G-rtc" secondAttribute="bottom" constant="96" id="C7W-38-wf5"/>
+                            <constraint firstItem="100-0G-rtc" firstAttribute="top" secondItem="Da9-Jd-YEy" secondAttribute="bottom" constant="16" id="Cnw-zW-3DX"/>
                             <constraint firstItem="Da9-Jd-YEy" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="KS6-bZ-nae"/>
-                            <constraint firstItem="100-0G-rtc" firstAttribute="centerY" secondItem="zbg-HC-cVd" secondAttribute="centerY" id="OFr-y6-lUd"/>
                             <constraint firstAttribute="trailing" secondItem="100-0G-rtc" secondAttribute="trailing" id="Oqg-av-Ca1"/>
-                            <constraint firstItem="iNp-t7-GYe" firstAttribute="top" secondItem="100-0G-rtc" secondAttribute="bottom" constant="46" id="Q9y-9E-38S"/>
                             <constraint firstAttribute="trailing" secondItem="Da9-Jd-YEy" secondAttribute="trailing" id="WR7-xe-1cv"/>
                             <constraint firstAttribute="trailing" secondItem="100-0G-rtc" secondAttribute="trailing" id="YGd-Xe-MZQ"/>
                             <constraint firstItem="100-0G-rtc" firstAttribute="leading" secondItem="zbg-HC-cVd" secondAttribute="leading" id="gUF-26-9hL"/>
                             <constraint firstItem="Da9-Jd-YEy" firstAttribute="top" secondItem="t0N-qX-OoG" secondAttribute="bottom" id="n5D-Nb-ymX"/>
-                            <constraint firstItem="ilj-Kh-f0U" firstAttribute="top" secondItem="100-0G-rtc" secondAttribute="bottom" constant="61" id="ugA-nC-lt1"/>
+                            <constraint firstItem="ilj-Kh-f0U" firstAttribute="top" secondItem="100-0G-rtc" secondAttribute="bottom" constant="120" id="uaG-bE-UGk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="lbl" destination="9uo-Ng-EyW" id="uq1-qT-vKi"/>
                         <outlet property="nazad" destination="gbY-hr-JlK" id="vyo-Od-MgD"/>
-                        <outlet property="pesma" destination="ilj-Kh-f0U" id="HGg-9d-RL0"/>
+                        <outlet property="pesma" destination="ilj-Kh-f0U" id="rtL-yz-XkI"/>
                         <outlet property="pevac" destination="iNp-t7-GYe" id="EQY-9d-vwJ"/>
                         <outlet property="tableView" destination="100-0G-rtc" id="yuT-09-rHo"/>
                     </connections>
@@ -263,6 +264,11 @@
             <point key="canvasLocation" x="1768.1159420289857" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ilj-Kh-f0U">
+            <size key="intrinsicContentSize" width="89" height="35"/>
+        </designable>
+    </designables>
     <resources>
         <image name="chevron.backward.circle" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>

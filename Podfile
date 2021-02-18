@@ -7,8 +7,9 @@ target 'ispitDizajn' do
 
   # Pods for ispitDizajn
   pod 'InteractiveSideMenu'
-  pod 'PresenterKit', '~> 6.1.0'
-  
+  pod 'MarqueeLabel'
+  #pod 'PresenterKit', '~> 6.1.0'
+ 
   
 
 end

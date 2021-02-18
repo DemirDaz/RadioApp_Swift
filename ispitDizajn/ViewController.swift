@@ -7,26 +7,32 @@
 
 import UIKit
 import InteractiveSideMenu
-import PresenterKit
+//import PresenterKit
 //import FRadioPlayer
 
 
 class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemContent, Storyboardable {
     @IBOutlet weak var imestanice: UILabel!
     
+    @IBOutlet weak var skrol: UIScrollView!
     @IBOutlet weak var imepesme: UILabel!
     
+    @IBOutlet weak var pauza: UIButton!
     @IBOutlet weak var dugme: UIButton!
     @IBOutlet weak var imepevaca: UILabel!
     
     @IBOutlet weak var frekvenca: UILabel!
-    @IBOutlet weak var pauza: UIButton!
+   
     
+    @IBOutlet weak var stekpesama: UIStackView!
     @IBOutlet weak var sideme: UIButton!
     @IBOutlet weak var plej: UIButton!
     var selected = ""
     var freq = ""
     let player = FRadioPlayer.shared
+    let MAX_PAGE = 20
+        let MIN_PAGE = 0
+        var currentPage = 0
     //var myTimer:Timer
     
     func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
@@ -47,6 +53,8 @@ class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemConten
         
     }
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
+        
+        
         frekvenca.text = freq
         imestanice.text = selected
         
@@ -62,6 +70,7 @@ class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemConten
         updateLabels()
     }
     func radioPlayer(_ player: FRadioPlayer, itemDidChange url: URL?) {
+        
         imestanice.text = url?.baseURL?.absoluteString
     }
     
@@ -82,6 +91,26 @@ class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemConten
         
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func detectSwipe (_ sender: UISwipeGestureRecognizer) {
+        if (currentPage < MAX_PAGE && sender.direction == UISwipeGestureRecognizer.Direction.left) {
+            moveScrollView(direction: 1)
+        }
+        if (currentPage > MIN_PAGE && sender.direction == UISwipeGestureRecognizer.Direction.right) {
+            moveScrollView(direction: -1)
+        }
+    }
+
+
+
+    func moveScrollView(direction: Int) {
+        currentPage = currentPage + direction
+        let point: CGPoint = CGPoint(x: skrol.frame.size.width * CGFloat(currentPage), y: 0.0)
+        skrol.setContentOffset(point, animated: true)
+
+        // Create a animation to increase the actual icon on screen
+        
+        }
     
     @IBAction func open(_ sender: Any) {
         showSideMenu()
@@ -111,6 +140,9 @@ class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemConten
         selected = "Public R"
         freq = "102.8"
         player.play()
+        let n = Int(arc4random_uniform(6))
+        
+        stekpesama.addArrangedSubview(self.stekpesama.subviews[n])
        
     }
     @IBAction func radio2(_ sender: Any) {
@@ -118,12 +150,16 @@ class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemConten
         selected = "Cannes B"
         freq = "103.6"
         player.play()
+        let n = Int(arc4random_uniform(6))
+        stekpesama.addArrangedSubview(self.stekpesama.subviews[n])
     }
     @IBAction func radio3(_ sender: Any) {
        player.radioURL = URL(string: "http://82.135.234.195:8000/gerasfm.mp3")
         selected = "US Now"
         freq = "112.8"
         player.play()
+        let n = Int(arc4random_uniform(6))
+        stekpesama.addArrangedSubview(self.stekpesama.subviews[n])
         
     }
     @IBAction func radio4(_ sender: Any) {
@@ -132,6 +168,8 @@ class ViewController: UIViewController, FRadioPlayerDelegate, SideMenuItemConten
         freq = "82.6"
         imepesme.text = "Magic"
         imepevaca.text = "Chain Smokers"
+        let n = Int(arc4random_uniform(6))
+        stekpesama.addArrangedSubview(self.stekpesama.subviews[n])
     }
     @IBAction func pauseBtn(_ sender: Any) {
         player.pause()

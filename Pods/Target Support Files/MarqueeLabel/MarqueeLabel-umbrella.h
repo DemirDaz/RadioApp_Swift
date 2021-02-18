@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PresenterKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char PresenterKitVersionString[];
+FOUNDATION_EXPORT double MarqueeLabelVersionNumber;
+FOUNDATION_EXPORT const unsigned char MarqueeLabelVersionString[];
 

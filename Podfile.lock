@@ -1,20 +1,20 @@
 PODS:
   - InteractiveSideMenu (2.3)
-  - PresenterKit (6.1.1)
+  - MarqueeLabel (4.0.5)
 
 DEPENDENCIES:
   - InteractiveSideMenu
-  - PresenterKit (~> 6.1.0)
+  - MarqueeLabel
 
 SPEC REPOS:
   trunk:
     - InteractiveSideMenu
-    - PresenterKit
+    - MarqueeLabel
 
 SPEC CHECKSUMS:
   InteractiveSideMenu: d503a508c6d62a4d5d4372d9fb9e1795637a8e45
-  PresenterKit: f7d275fa9e1fe01b84da7be0a6630ec2728ab409
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
 
-PODFILE CHECKSUM: 042718ce29c099b2571d3728481a2971c6333bc4
+PODFILE CHECKSUM: 3e6393abd36c948cb404460ab5caca5417f90e70
 
 COCOAPODS: 1.10.1
